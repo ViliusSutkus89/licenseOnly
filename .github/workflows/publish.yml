@@ -17,6 +17,8 @@ jobs:
   publish:
     runs-on: ubuntu-20.04
     steps:
+      - uses: actions/checkout@v2
+
       - name: 'Publish to Sonatype'
         run: ./gradlew publishToSonatype closeSonatypeStagingRepository
         env:
