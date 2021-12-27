@@ -19,6 +19,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Build and publish dependencies to mavenLocal
+        run: ./gradlew -x pdf2htmlEX-dependency-tree:publishToMavenLocal publishToMavenLocal
+
       - name: 'Publish to Sonatype'
         run: ./gradlew publishToSonatype closeSonatypeStagingRepository
         env:
