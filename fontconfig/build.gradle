@@ -13,7 +13,7 @@ android {
         targetSdk 32
 
         versionCode 1
-        versionName '1.00'
+        versionName '2.13.93'
     }
 }
 
@@ -39,25 +39,31 @@ afterEvaluate {
 
                 pom {
                     name = project.name
-                    description = 'Symbol and Zapf Dingbats Type 1 fonts'
-                    url = 'http://www.xpdfreader.com/download.html'
+                    description = 'Fontconfig is a library for configuring and customizing font access.'
+                    url = 'https://www.freedesktop.org/wiki/Software/fontconfig/'
                     packaging = 'aar'
-                    inceptionYear = '1995'
+                    inceptionYear = '2000'
                     licenses {
                         license {
-                            name = 'GPLv2'
-                            url = 'https://www.gnu.org/licenses/gpl-2.0.html'
+                            name = 'MIT'
+                            url = 'https://gitlab.freedesktop.org/fontconfig/fontconfig/-/blob/2.13.93/COPYING'
                             distribution = 'repo'
                         }
                     }
                     scm {
-                        url = 'https://github.com/ViliusSutkus89/licenseOnly'
-                        connection = 'https://github.com/ViliusSutkus89/licenseOnly.git'
+                        url = 'https://gitlab.freedesktop.org/fontconfig/fontconfig'
+                        connection = 'https://gitlab.freedesktop.org/fontconfig/fontconfig.git'
                     }
                     developers {
+                        // Developer list obtained from:
+                        // https://gitlab.freedesktop.org/fontconfig/fontconfig/-/blob/2.13.93/AUTHORS
                         developer {
-                            id = "urwpp"
-                            name = "ghostscript project by URW++ Design and Development Incorporated"
+                            name = "Keith Packard"
+                            email = "keithp@keithp.com"
+                        }
+                        developer {
+                            name = "Patrick Lam"
+                            email = "plam@mit.edu"
                         }
                     }
                 }

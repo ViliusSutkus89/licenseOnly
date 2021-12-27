@@ -10,7 +10,33 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/FontForge" />
+            <option value="$PROJECT_DIR$/FreeType" />
+            <option value="$PROJECT_DIR$/FriBiDi" />
+            <option value="$PROJECT_DIR$/GLib" />
+            <option value="$PROJECT_DIR$/HarfBuzz" />
+            <option value="$PROJECT_DIR$/LCMS" />
+            <option value="$PROJECT_DIR$/LibTIFF" />
+            <option value="$PROJECT_DIR$/OpenJPEG" />
             <option value="$PROJECT_DIR$/SymbolAndZapfDingbatsFonts" />
+            <option value="$PROJECT_DIR$/cairo" />
+            <option value="$PROJECT_DIR$/fontconfig" />
+            <option value="$PROJECT_DIR$/libexpat" />
+            <option value="$PROJECT_DIR$/libffi" />
+            <option value="$PROJECT_DIR$/libiconv" />
+            <option value="$PROJECT_DIR$/libjpeg-turbo" />
+            <option value="$PROJECT_DIR$/libpng" />
+            <option value="$PROJECT_DIR$/libtool" />
+            <option value="$PROJECT_DIR$/libuninameslist" />
+            <option value="$PROJECT_DIR$/libxml" />
+            <option value="$PROJECT_DIR$/pango" />
+            <option value="$PROJECT_DIR$/pdf2htmlEX" />
+            <option value="$PROJECT_DIR$/pdf2htmlEX-dependency-tree" />
+            <option value="$PROJECT_DIR$/pixman" />
+            <option value="$PROJECT_DIR$/poppler" />
+            <option value="$PROJECT_DIR$/poppler-data" />
+            <option value="$PROJECT_DIR$/proxy-intl" />
+            <option value="$PROJECT_DIR$/proxy-libintl" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

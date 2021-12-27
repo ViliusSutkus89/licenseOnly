@@ -13,7 +13,7 @@ android {
         targetSdk 32
 
         versionCode 1
-        versionName '1.00'
+        versionName '0.4.9'
     }
 }
 
@@ -39,25 +39,36 @@ afterEvaluate {
 
                 pom {
                     name = project.name
-                    description = 'Symbol and Zapf Dingbats Type 1 fonts'
-                    url = 'http://www.xpdfreader.com/download.html'
+                    description = 'Encoding files for use with poppler.'
+                    url = 'https://poppler.freedesktop.org'
                     packaging = 'aar'
-                    inceptionYear = '1995'
+                    inceptionYear = '2006'
                     licenses {
                         license {
+                            name = 'MIT'
+                            url = 'https://cgit.freedesktop.org/poppler/poppler-data/tree/COPYING?h=POPPLER_DATA_0_4_9'
+                            distribution = 'repo'
+                        }
+                        license {
+                            name = 'COPYING.adobe'
+                            url = 'https://cgit.freedesktop.org/poppler/poppler-data/tree/COPYING.adobe?h=POPPLER_DATA_0_4_9'
+                            distribution = 'repo'
+                        }
+                        license {
                             name = 'GPLv2'
-                            url = 'https://www.gnu.org/licenses/gpl-2.0.html'
+                            url = 'https://cgit.freedesktop.org/poppler/poppler-data/tree/COPYING.gpl2?h=POPPLER_DATA_0_4_9'
                             distribution = 'repo'
                         }
                     }
                     scm {
-                        url = 'https://github.com/ViliusSutkus89/licenseOnly'
-                        connection = 'https://github.com/ViliusSutkus89/licenseOnly.git'
+                        url = 'https://cgit.freedesktop.org/poppler/poppler-data'
+                        connection = 'https://anongit.freedesktop.org/git/poppler/poppler-data.git'
                     }
                     developers {
                         developer {
-                            id = "urwpp"
-                            name = "ghostscript project by URW++ Design and Development Incorporated"
+                            id = 'tsdgeos'
+                            name = 'Albert Astals Cid'
+                            email = 'aacid@kde.org'
                         }
                     }
                 }

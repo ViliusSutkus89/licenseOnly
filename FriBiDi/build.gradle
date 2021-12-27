@@ -13,7 +13,7 @@ android {
         targetSdk 32
 
         versionCode 1
-        versionName '1.00'
+        versionName '1.0.7'
     }
 }
 
@@ -39,25 +39,39 @@ afterEvaluate {
 
                 pom {
                     name = project.name
-                    description = 'Symbol and Zapf Dingbats Type 1 fonts'
-                    url = 'http://www.xpdfreader.com/download.html'
+                    description = 'The Free Implementation of the Unicode Bidirectional Algorithm'
+                    url = 'https://github.com/fribidi/fribidi'
                     packaging = 'aar'
-                    inceptionYear = '1995'
+                    inceptionYear = '2000'
                     licenses {
                         license {
-                            name = 'GPLv2'
-                            url = 'https://www.gnu.org/licenses/gpl-2.0.html'
+                            name = 'LGPLv2.1-or-later'
+                            url = 'https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html'
                             distribution = 'repo'
                         }
                     }
                     scm {
-                        url = 'https://github.com/ViliusSutkus89/licenseOnly'
-                        connection = 'https://github.com/ViliusSutkus89/licenseOnly.git'
+                        url = 'https://github.com/fribidi/fribidi'
+                        connection = 'https://github.com/fribidi/fribidi.git'
                     }
                     developers {
+                        // Developer list obtained from:
+                        // https://github.com/fribidi/fribidi/blob/v1.0.7/AUTHORS
                         developer {
-                            id = "urwpp"
-                            name = "ghostscript project by URW++ Design and Development Incorporated"
+                            name = 'Behdad Esfahbod'
+                            email = 'behdad@gnu.org'
+                        }
+                        developer {
+                            name = 'Dov Grobgeld'
+                            email = 'dov.grobgeld@gmail.com'
+                        }
+                        developer {
+                            name = 'Roozbeh Pournader'
+                            email = 'roozbeh@gnu.org'
+                        }
+                        developer {
+                            name = 'Khaled Hosny'
+                            email = 'khaledhosny@eglug.org'
                         }
                     }
                 }
